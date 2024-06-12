@@ -1,0 +1,60 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToWidth="true" fitToHeight="true" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.CalculatorController">
+    <content>
+        <VBox alignment="TOP_CENTER" spacing="20">
+            <GridPane alignment="center" hgap="10" vgap="10" stylesheets="@calculator.css">
+                <TextField fx:id="display" GridPane.columnSpan="4" editable="false" GridPane.rowIndex="0" />
+
+                <!-- Number buttons -->
+                <Button text="0" onAction="#processNumbers" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                <Button text="1" onAction="#processNumbers" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+                <Button text="2" onAction="#processNumbers" GridPane.rowIndex="1" GridPane.columnIndex="2" />
+                <Button text="*" onAction="#processOperators" GridPane.rowIndex="1" GridPane.columnIndex="3" />
+
+                <!-- Other number buttons -->
+                <Button text="3" onAction="#processNumbers" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <Button text="4" onAction="#processNumbers" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+                <Button text="5" onAction="#processNumbers" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+                <Button text="/" onAction="#processOperators" GridPane.rowIndex="2" GridPane.columnIndex="3" />
+
+                <!-- More number buttons -->
+                <Button text="6" onAction="#processNumbers" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+                <Button text="7" onAction="#processNumbers" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+                <Button text="8" onAction="#processNumbers" GridPane.rowIndex="3" GridPane.columnIndex="2" />
+                <Button text="-" onAction="#processOperators" GridPane.rowIndex="3" GridPane.columnIndex="3" />
+
+                <!-- Additional buttons -->
+                <Button text="9" onAction="#processNumbers" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+                <Button text="." onAction="#processNumbers" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+                <Button text="=" onAction="#processOperators" GridPane.rowIndex="4" GridPane.columnIndex="2" />
+                <Button text="+" onAction="#processOperators" GridPane.rowIndex="4" GridPane.columnIndex="3" />
+
+                <!-- Unary operation buttons -->
+                <Button text="C" onAction="#clearDisplay" GridPane.rowIndex="5" GridPane.columnIndex="3" />
+                <Button text="log" onAction="#processOperators" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+                <Button text="ln" onAction="#processOperators" GridPane.rowIndex="5" GridPane.columnIndex="2" />
+                <Button text="^" onAction="#processOperators" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+                <Button text="sin" onAction="#processOperators" GridPane.rowIndex="6" GridPane.columnIndex="2" />
+
+                <!-- Scientific operation buttons -->
+                <Button text="cos" onAction="#processOperators" GridPane.rowIndex="6" GridPane.columnIndex="0" />
+                <Button text="tan" onAction="#processOperators" GridPane.rowIndex="6" GridPane.columnIndex="1" />
+                <Button text="√" onAction="#processOperators" GridPane.rowIndex="6" GridPane.columnIndex="3" />
+                <Button text="∛" onAction="#processOperators" GridPane.rowIndex="7" GridPane.columnIndex="3" />
+                <Button text="D->F" onAction="#convertToFraction" GridPane.rowIndex="8" GridPane.columnIndex="0" />
+
+                <!-- Inverse trigonometric function buttons -->
+                <Button text="arcsin" onAction="#processOperators" GridPane.rowIndex="7" GridPane.columnIndex="0" />
+                <Button text="arccos" onAction="#processOperators" GridPane.rowIndex="7" GridPane.columnIndex="1" />
+                <Button text="arctan" onAction="#processOperators" GridPane.rowIndex="7" GridPane.columnIndex="2" />
+
+                <!-- Degree/Radian Checkboxes -->
+                <CheckBox text="Degrees" fx:id="degreeCheckBox" onAction="#handleDegreeCheckBoxAction" GridPane.rowIndex="9" GridPane.columnIndex="0" />
+                <CheckBox text="Radians" fx:id="radianCheckBox" onAction="#handleRadianCheckBoxAction" GridPane.rowIndex="9" GridPane.columnIndex="1" />
+            </GridPane>
+        </VBox>
+    </content>
+</ScrollPane>
+

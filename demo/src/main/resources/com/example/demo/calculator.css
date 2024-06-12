@@ -1,0 +1,40 @@
+/* Set the font and padding for the display */
+#display {
+    -fx-font-size: 24px;
+    -fx-padding: 10px;
+    -fx-background-color: #282c34;
+    -fx-text-fill: #61dafb;
+    -fx-border-color: #61dafb;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Set the font, padding, and background colour for buttons */
+.button {
+    -fx-font-size: 18px;
+    -fx-padding: 15px;
+    -fx-background-color: #61dafb;
+    -fx-text-fill: #282c34;
+    -fx-border-color: #282c34;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+}
+
+/* Set the hover and pressed effects for buttons */
+.button:hover {
+    -fx-background-color: #21a1f1;
+}
+
+.button:pressed {
+    -fx-background-color: #1e90ff;
+}
+
+/* Set the font, padding, and background colour for checkboxes */
+.check-box {
+    -fx-font-size: 16px;
+    -fx-padding: 5px;
+    -fx-text-fill: #282c34;
+}
