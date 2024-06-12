@@ -1,4 +1,4 @@
-**Calculator Application**
+## Calculator Application ##
 
 **Overview**
 
@@ -26,5 +26,5 @@ To run the calculator application, you'll need to have Java and JavaFX installed
 - Conversion of decimal numbers to fractions
 - Customizable appearance using CSS styles
 
-![image](https://github.com/kh2g21/javafx-scientific-calculator/assets/127450521/e43c1389-82fb-4d58-9c46-b24a3528b23a)
+![image](https://github.com/kh2g21/javafx-scientific-calculator/assets/127450521/48d8b7ab-2f38-460c-963a-7ea89e842d38)
 
