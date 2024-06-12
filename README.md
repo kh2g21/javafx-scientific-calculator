@@ -25,3 +25,6 @@ To run the calculator application, you'll need to have Java and JavaFX installed
 - Option to switch between degrees and radians for trigonometric functions
 - Conversion of decimal numbers to fractions
 - Customizable appearance using CSS styles
+
+![image](https://github.com/kh2g21/javafx-scientific-calculator/assets/127450521/e43c1389-82fb-4d58-9c46-b24a3528b23a)
+
